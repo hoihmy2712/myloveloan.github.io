@@ -1,20 +1,20 @@
 ﻿<!DOCTYPE html>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="icon" type="image/png" href="image/favicon.ico">
-		<title>Anh ❤️️ Em</title>    
-        <link type="text/css" rel="stylesheet" href="./renxi/default.css">
-		<script type="text/javascript" src="./renxi/jquery.min.js"></script>
-		<script type="text/javascript" src="./renxi/jscex.min.js"></script>
-		<script type="text/javascript" src="./renxi/jscex-parser.js"></script>
-		<script type="text/javascript" src="./renxi/jscex-jit.js"></script>
-		<script type="text/javascript" src="./renxi/jscex-builderbase.min.js"></script>
-		<script type="text/javascript" src="./renxi/jscex-async.min.js"></script>
-		<script type="text/javascript" src="./renxi/jscex-async-powerpack.min.js"></script>
-		<script type="text/javascript" src="./renxi/functions.js" charset="utf-8"></script>
-		<script type="text/javascript" src="./renxi/love.js" charset="utf-8"></script>
-	    <style type="text/css">
-            <!-- .STYLE1 {color: #666666} -->
-        </style>
+    <link rel="icon" type="image/png" href="image/favicon.ico">
+    <title>Anh ❤️️ Em</title>
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jscex.min.js"></script>
+    <script type="text/javascript" src="./js/jscex-parser.js"></script>
+    <script type="text/javascript" src="./js/jscex-jit.js"></script>
+    <script type="text/javascript" src="./js/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="./js/jscex-async.min.js"></script>
+    <script type="text/javascript" src="./js/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="./js/functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./js/love.js" charset="utf-8"></script>
+    <style type="text/css">
+        <!-- .STYLE1 {color: #666666} -->
+    </style>
 </head>
 <body>
 	<audio autoplay="autoplay">
@@ -46,6 +46,8 @@
                 <span class="STYLE1"></span><font color="#FF0000">Anh ❤️️ Em</font>
                 <span class="STYLE1"> Time of love...</span>
                 <div id="clock"></div>
+
+                /* <div id="time"></div> */
             </div>
 
             <canvas id="canvas" width="1100" height="680"></canvas>
@@ -182,12 +184,16 @@
         }));
 
         var textAnimate = eval(Jscex.compile("async", function () {
-		    var together = new Date();
-		    together.setFullYear(2019,03,31); 			
-		    together.setHours(0);							
-		    together.setMinutes(0);				
-		    together.setSeconds(0);					
-		    together.setMilliseconds(0);			
+            var together = new Date();
+            /* Start date: Saturday, March 30, 2019 11:55:00 PM GMT+07:00 */
+            /* Month: (0 for January, 11 for December) */
+            together.setFullYear(2019,2,30);
+            together.setMonth(2,30);
+            together.setDate(30);
+		    together.setHours(23,55,0,0);
+		    together.setMinutes(55,0,0);
+		    together.setSeconds(0,0);
+		    together.setMilliseconds(0);
 
 		    $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
