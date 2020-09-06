@@ -65,7 +65,11 @@ a {
 }
 .say {
     margin-left: 5px;
+    color: #0000FF;
 }
 .space {
     margin-right: 150px;
+}
+.couple {
+    color: #FF0000;
 }
