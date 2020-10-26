@@ -44,10 +44,10 @@ a {
     text-decoration: none;
 }
 #clock {
-    margin-left: 40px;
+    margin-left: 10px;
 }
 #clock .digit {
-    font-size: 64px;
+    font-size: 48px;
 }
 #canvas {
     margin: 0 auto;
