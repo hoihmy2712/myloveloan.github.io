@@ -36,18 +36,18 @@ a {
     position: absolute;
     left: 60px;
     top: 550px;
-    font-size: 28px;
+    font-size: 22px;
     display: none;
 }
 #clock-box a {
-    font-size: 28px;
+    font-size: 22px;
     text-decoration: none;
 }
 #clock {
     margin-left: 10px;
 }
 #clock .digit {
-    font-size: 48px;
+    font-size: 40px;
 }
 #canvas {
     margin: 0 auto;
